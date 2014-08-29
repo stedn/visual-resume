@@ -1,0 +1,158 @@
+/* move special fonts to HTML head for better performance */
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,700');
+
+.node {
+  cursor: pointer;
+  stroke: #3182bd;
+  stroke-width: 1.5px;
+}
+
+.link {
+  fill: none;
+  stroke: #9ecae1;
+  stroke-width: 1.5px;
+}
+
+
+/* custom template */
+html, body {
+   height: 100%;
+   font-family:'Open Sans',arial,sans-serif;
+}
+
+a {
+  color:#FF9966;
+}
+
+.wrapper, .row {
+   height: 100%;
+   margin-left:0;
+   margin-right:0;
+}
+
+.wrapper:before, .wrapper:after,
+.column:before, .column:after {
+    content: "";
+    display: table;
+}
+
+.wrapper:after,
+.column:after {
+    clear: both;
+}
+
+.column {
+    height: 100%;
+    overflow: auto;
+    *zoom:1;
+}
+
+.column .padding {
+    padding: 20px;
+    margin:10px;
+}
+
+.box {
+  	bottom: 0; /* increase for footer use */
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image:url('https://lh5.googleusercontent.com/-MJXctOEozYM/U_-PMI2ZQzI/AAAAAAAAAbk/I-9q9TdqyvI/w385-h513-no/slot3.JPG');
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+.divider {
+	margin-top:32px;
+}
+
+#main {
+    background-color:#fefefe;
+}
+#main .img-circle {
+  margin-top:18px;
+  height:70px;
+  width:70px;
+}
+
+#sidebar, #sidebar a {
+    height:100%;
+    color:#ffffff;
+    background-color:transparent;
+	text-shadow:1px 0 1px #888888;
+}
+#sidebar img.logo {
+  display:block;
+  padding:3px;
+  background-color:#fff;
+  color:#777777;
+  width:80%;
+  margin:0 10% 0;
+}
+#sidebar li {
+  margin:8px;
+}
+#sidebar .fa {
+  font-size:15px;
+}
+#sidebar button {
+padding:3px ;
+  margin:10px 1px 10px 0;
+}
+#sidebar #mysites{
+  border:2px solid #777777;
+  border-radius:5px;
+}
+
+#sidebar li img{
+  border-radius:5px;
+  margin:8px;
+}
+
+#footer {
+  margin-bottom:20px;
+}
+
+/* center and adjust the sidebar contents on smaller devices */
+@media (max-width: 768px) {
+  .box {
+    position: relative;
+  }
+  #sidebar{
+    text-align:center;
+    margin:0 auto;
+    margin-top:30px;
+    font-size:18px;
+  }
+  #sidebar img.logo {
+    width:40%;
+    margin:0 30% 0
+  }
+}
+
+
+
+
+/* bootstrap overrides */
+
+h1,h2,h3 {
+   font-weight:800;
+   font-family:'Open Sans',arial,sans-serif;
+}
+
+.jumbotron {
+  background-color:transparent;
+}
+.label-default {
+  background-color:#dddddd;
+}
+
+
+.col-sm-9.full {
+    width: 100%;
+}
+
+small.text-muted {
+  font-family:courier,courier-new,monospace;
+}
