@@ -1,0 +1,94 @@
+[
+  {
+    "name":     "Me",
+    "category":     "me",
+    "ref": "#",
+    "imports":  [ "active matter", "pulse contractions", "google maps", "tech vivo", "dance wii", "artifice site"]
+  }, {
+    "name":     "Jon",
+    "category":     "Uchicago",
+    "ref": "#",
+    "imports":  [ "pulse contractions"]
+  }, {
+    "name":     "Edwin",
+    "category":     "Uchicago",
+    "ref": "#",
+    "imports":  [ "pulse contractions", "active matter"]
+  }, {
+    "name":     "Margaret",
+    "category":     "Uchicago",
+    "ref": "#",
+    "imports":  [  "active matter"]
+  },
+
+
+  {
+    "name":     "active matter",
+    "category":     "PhD",
+    "ref": "#",
+    "imports":  [ "java", "microscopy","dissection","pipetting" ]
+  }, {
+    "name":     "pulse contractions",
+    "category":     "PhD",
+    "ref": "#",
+    "imports":  [ "MATLAB" ]
+  }, {
+    "name":     "google maps",
+    "category":     "hobby",
+    "ref": "#",
+    "imports":  [ "HTML" ]
+  }, {
+    "name":     "tech vivo",
+    "category":     "hobby",
+    "ref": "#",
+    "imports":  [ "HTML","web" ]
+  }, {
+    "name":     "dance wii",
+    "category":     "artifice",
+    "ref": "#",
+    "imports":  [ "java" ]
+  }, {
+    "name":     "artifice site",
+    "category":     "artifice",
+    "ref": "#",
+    "imports":  [ "HTML","web" ]
+  },
+
+
+  {
+    "name":     "java",
+    "category":     "prog",
+    "ref": "#",
+    "imports":  [ ]
+  }, {
+    "name":     "MATLAB",
+    "category":     "prog",
+    "ref": "#",
+    "imports":  [ ]
+  }, {
+    "name":     "HTML",
+    "category":     "prog",
+    "ref": "#",
+    "imports":  [ ]
+  }, {
+    "name":     "dissection",
+    "category":     "science",
+    "ref": "#",
+    "imports":  [ ]
+  }, {
+    "name":     "microscopy",
+    "category":     "science",
+    "ref": "#",
+    "imports":  [ ]
+  }, {
+    "name":     "pipetting",
+    "category":     "science",
+    "ref": "#",
+    "imports":  [ ]
+  }, {
+    "name":     "web",
+    "category":     "design",
+    "ref": "#",
+    "imports":  [ ]
+  }
+]

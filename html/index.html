@@ -13,6 +13,7 @@
 			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		<link href="css/styles.css" rel="stylesheet">
+	    <link href="css/demo.css" rel="stylesheet">
 	</head>
 	<body>
 <div class="wrapper">
@@ -33,7 +34,7 @@
                       <h3>Will McFadden</h3>
                     </li>
                     <li>
-                    <p><i>scientist and explorer<br>I like to work on lots of things</i></p>
+                    <p><i>science, art, travel, tech, math, writing<br>I like to work on lots of things</i></p>
                     </li><li><div id="mysites"><img src="https://avatars3.githubusercontent.com/u/7784380?v=2&s=72"/><img src="https://avatars2.githubusercontent.com/u/7785625?v=2&s=72"/> artifice munrolab <img src="https://avatars1.githubusercontent.com/u/7784485?v=2&s=72"/></div>
                     </li>
                     
@@ -85,6 +86,12 @@
                             <small class="text-muted"><a href="#" class="text-muted">Read More</a></small>
                             </h4>
                           </div>
+                        </div>
+                        <div class="row">    
+                        
+                            <div class="col-sm-12" id='demo_1'>
+                                <span class='chart'>&nbsp;</span>
+                            </div>
                         </div>
                         
                         <div class="row divider">    
@@ -144,13 +151,7 @@
                           
                           <div class="col-sm-12">
                             <p>
-                            Creative Commons <a href='http://creativecommons.org/licenses/by-nc-sa/4.0/'>
-            BY-NC-SA.
-          </a>Powered by  
-          <a href='https://developers.google.com/appengine/'>
-            GAE.
-          </a>
-                            Adapted from <a href="http://bootply.com/" target="ext">Bootply</a>
+                            Creative Commons <a href='http://creativecommons.org/licenses/by-nc-sa/4.0/'>BY-NC-SA. </a>Powered by  <a href='https://developers.google.com/appengine/'>GAE.</a>Adapted from <a href="http://bootply.com/" target="ext">Bootply.</a> For best results, use <a href="https://www.mozilla.org/en-US/firefox/new/" target="ext">Firefox.</a>
                             </p>
                           </div>
                         </div>
@@ -190,7 +191,7 @@ var vis = d3.select("#forcegraph").append("svg:svg")
     .attr("width", w)
     .attr("height", h);
 
-d3.json("js/readme.js", function(json) {
+d3.json("js/readme.json", function(json) {
   root = json;
   root.x = w / 2;
   root.y = h / 2 ;
@@ -304,5 +305,13 @@ function flatten(root) {
 }
 
 </script>
+
+      
+    <script src='js/lib_data.js'></script>
+    <script src='js/lib_link.js'></script>
+    <script src='js/lib_mouse.js'></script>
+    <script src='js/lib_plot.js'></script>
+    <script src='js/main.js'></script>
+
 	</body>
 </html>

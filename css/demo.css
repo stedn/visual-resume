@@ -1,0 +1,39 @@
+/* demo.css */
+
+.axis {
+  stroke:               #000;
+  stroke-width:         1.5px;
+}
+
+
+#demo_1 svg, #demo_2 svg          { border:         solid 1px #ccc; 
+                                    background-color: #FEFCE8;}
+
+
+.node ellipse                     { stroke:         transparent;  
+                                        stroke-width:2px;}
+.node .active_it ellipse           { stroke:         #67C5C2;   }
+.node .active_is ellipse          { stroke:         #3D2117;  }
+.node .active_its ellipse          { stroke:         #3D2117;  }
+.node .active_mo ellipse          { stroke:         #C84127;    }
+
+.node .labl                {visibility: hidden;}
+.node .active_it .labl                {visibility: visible;}
+.node .active_is .labl                {visibility: visible;}
+.node .active_its .labl                {visibility: visible;}
+
+
+.link {
+  fill:                           none;
+  stroke:                         #ccc;
+  stroke-opacity:                 0.3;
+  stroke-width:                   2px;
+}
+
+.link.active_it, .link.active_is, .link.active_its, .link.active_mo {
+  stroke-opacity:                 1;
+  stroke-width:                   2px;
+}
+
+.link.active_mo                   { stroke:       #67C5C2;    }
+
