@@ -6,7 +6,7 @@
 
     var degree  = Math.PI / 180,
         x_max   = $("#demo_1").innerWidth(),    x_off   = x_max * 0.33,
-        y_max   = 700,    y_off   = y_max * 0.5;
+        y_max   = 700,    y_off   = y_max * 0.4;
 
     if (format === 'conv') {  // "conventional"
       var a_so    =    -160,     

@@ -55,6 +55,7 @@ var display_plot = function(plot_info) {
 
   var x1 = g.radius_f(0) - 10;
   var x2 = function(d) { return g.radius_f(d.count) + 10; };
+  var x3 = function(d) { return (g.radius_f(d.count) + 50); };
 
   g.svg.selectAll('.axis')
     .data(g.nodesByType)
@@ -64,7 +65,24 @@ var display_plot = function(plot_info) {
       .attr('x1', x1)
       .attr('x2', x2)
       
-
+ var rotandtransform   = function(d) {
+    return  'translate(-80,10) rotate(' + degrees( g.angle_f(d.key) ) + ') rotate('+(-degrees( g.angle_f(d.key) ))+', '+(g.radius_f(d.count) + 50)+', 0)';
+  };
+  
+g.svg.selectAll('.axislabl')
+    .data(g.nodesByType)
+    .enter().append('text')
+      .attr('class', 'axislabl')
+      .attr('transform', rotandtransform)
+      .attr("x", x3)
+      .text( function(d) { 
+        if(d.key=='target') return 'skills';
+        if(d.key=='source') return 'people';
+        return 'projects';
+      })
+      .attr("font-family", "monospace")
+      .attr("font-size", "50px")
+      .style('fill', '#ddd');
   // Draw the links.
 
   var path_angle  = function(d) { return g.angle_f(d.type);    };

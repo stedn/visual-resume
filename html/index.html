@@ -22,13 +22,13 @@
           
             <!-- sidebar -->
             <div class="column col-sm-3" id="sidebar">
-                <button class="btn btn-stackexchange"><i class="fa fa-stack-exchange"></i> </button>
-                <button class="btn btn-github"><i class="fa fa-github"></i> </button>
-                <button class="btn btn-twitter"><i class="fa fa-twitter"></i> </button>
-                <button class="btn btn-google-plus"><i class="fa fa-google-plus"></i> </button>
-                <button class="btn btn-linkedin"><i class="fa fa-linkedin"></i> </button>
-                <button class="btn btn-tumblr"><i class="fa fa-tumblr"></i> </button>
-                <a href="#"><img class="logo" src="im/face.jpg"/></a>
+                <a href="http://stackexchange.com/users/4955815/will-mcfadden" target="_blank"><button class="btn btn-stackexchange"><i class="fa fa-stack-exchange"></i> </button></a>
+                <a href="https://github.com/wmcfadden" target="_blank"><button class="btn btn-github"><i class="fa fa-github"></i> </button></a>
+                <a href="https://twitter.com/wmcfadd2" target="_blank"><button class="btn btn-twitter"><i class="fa fa-twitter"></i> </button></a>
+                <a href="https://plus.google.com/u/0/103585488893025173441/posts" target="_blank"><button class="btn btn-google-plus"><i class="fa fa-google-plus"></i> </button></a>
+                <a href="https://www.linkedin.com/pub/william-mcfadden/98/348/b86" target="_blank"><button class="btn btn-linkedin"><i class="fa fa-linkedin"></i> </button></a>
+                <a href="http://wmcfadd2.tumblr.com/" target="_blank"><button class="btn btn-tumblr"><i class="fa fa-tumblr"></i> </button></a>
+                <a href="https://plus.google.com/u/0/photos/103585488893025173441/albums/6055636284117572929/6055636757059839026?pid=6055636757059839026&oid=103585488893025173441" target="_blank"><img class="logo" src="im/face.jpg"/></a>
                 <ul class="nav text-center">
                     <li>
                       <h3>Will McFadden</h3>
@@ -77,7 +77,7 @@
                         
                         <div class="row">    
                           <div class="col-sm-10">
-                            <h3>Projects/Collaborators/Competencies(http://bl.ocks.org/RichMorin/raw/2117857/)</h3>
+                            <h3>People-Projects-Skills</h3>
                             
                           </div>
                           <div class="col-sm-2">
@@ -144,21 +144,21 @@
                             </h4>
                           </div>
                         </div>
-                        
+                        <hr>
+                        <hr>
+                        <p class="text-center">Extreme thanks and mad props to <a href="http://bost.ocks.org/mike/">Mike Bostock</a> of <a href="http://d3js.org/">D3</a> for the visualization tools.
+                            </p>
                         <hr>
                         <hr>
                         <div class="row" id="footer">    
                           
                           <div class="col-sm-12">
-                            <p>
-                            Creative Commons <a href='http://creativecommons.org/licenses/by-nc-sa/4.0/'>BY-NC-SA. </a>Powered by  <a href='https://developers.google.com/appengine/'>GAE.</a>Adapted from <a href="http://bootply.com/" target="ext">Bootply.</a> For best results, use <a href="https://www.mozilla.org/en-US/firefox/new/" target="ext">Firefox.</a>
+                            <p class="text-right">
+                            Content under Creative Commons <a href='http://creativecommons.org/licenses/by-nc-sa/4.0/'>BY-NC-SA. </a>Powered by  <a href='https://developers.google.com/appengine/'>GAE.</a> Bootstrap layout adapted from <a href="http://bootply.com/" target="ext">Bootply.</a> <br>Uses <a href="http://fortawesome.github.io/Font-Awesome/">Font-Awesome</a> and <a href="https://github.com/noizwaves/bootstrap-social-buttons">bootstrap-social-buttons</a>. For best results, try <a href="https://www.mozilla.org/en-US/firefox/new/" target="ext">Firefox.</a> 
                             </p>
                           </div>
                         </div>
-                      
-                      <hr>
-                        
-                      <hr>
+                    
                         
                       
                     </div><!-- /col-9 -->
@@ -183,8 +183,8 @@ var w = $("#forcegraph").innerWidth(),
 
 var force = d3.layout.force()
     .on("tick", tick)
-    .charge(function(d) { return d._children ? -d.size / 10 : -300; })
-    .linkDistance(function(d) { return d.target._children ? 160 : 60; })
+    .charge(function(d) { return d._children ? -200-d.size / 100 : -200; })
+    .linkDistance(function(d) { return d.target._children ? d.target.size/300 : 60; })
     .size([w, h ]);
 
 var vis = d3.select("#forcegraph").append("svg:svg")
