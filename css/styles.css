@@ -103,6 +103,11 @@ padding:3px ;
   border-radius:5px;
 }
 
+#sidebar #mysites img{
+  width: 70px;
+  height: 70px;
+}
+
 #sidebar li img{
   border-radius:5px;
   margin:8px;
