@@ -27,6 +27,7 @@
                 <a href="https://twitter.com/wmcfadd2" target="_blank"><button class="btn btn-twitter"><i class="fa fa-twitter"></i> </button></a>
                 <a href="https://plus.google.com/u/0/103585488893025173441/posts" target="_blank"><button class="btn btn-google-plus"><i class="fa fa-google-plus"></i> </button></a>
                 <a href="https://www.linkedin.com/pub/william-mcfadden/98/348/b86" target="_blank"><button class="btn btn-linkedin"><i class="fa fa-linkedin"></i> </button></a>
+                <a href="https://en.wikipedia.org/wiki/User:Wmcfadden" target="_blank"><button class="btn btn-github"><img width="18px" src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Wikipedia%27s_W.svg"/> </button></a>
                 <a href="http://wmcfadd2.tumblr.com/" target="_blank"><button class="btn btn-tumblr"><i class="fa fa-tumblr"></i> </button></a>
                 <a href="https://plus.google.com/u/0/photos/103585488893025173441/albums/6055636284117572929/6055636757059839026?pid=6055636757059839026&oid=103585488893025173441" target="_blank"><img class="logo" src="im/face.jpg"/></a>
                 <ul class="nav text-center">
@@ -35,7 +36,7 @@
                     </li>
                     <li>
                     <p><i>{science, art, travel, tech, math, writing}<br>I like to work on lots of things</i></p>
-                    </li><li><div id="mysites"><a href="#"><img title="tech vivo" src="https://avatars3.githubusercontent.com/u/7784380?v=2&s=72"/></a><a href="#"><img title="makeLofT" src="https://avatars2.githubusercontent.com/u/7785625?v=2&s=72"/></a><a href="#"><img title="modelephant" src="https://avatars1.githubusercontent.com/u/7784485?v=2&s=72"/></a><a href="#"><img title="artifice" src="https://lh6.googleusercontent.com/-10biVUNUFNM/VBOA9lciEdI/AAAAAAAAAkI/iW5yqzn8QEQ/s150-no/artifice.tif"/></a><a href="#"><img title="munrolab" src="http://munrolab.bsd.uchicago.edu/images/people/wormtype/elegans_bw.jpg"></a></div>
+                    </li><li><div id="mysites"><a href="http://techvivo.blogspot.com/" target="_blank"><img title="tech vivo" src="https://avatars3.githubusercontent.com/u/7784380?v=2&s=72"/></a><a href="http://makeloft.blogspot.com/" target="_blank"><img title="makeLofT" src="https://avatars2.githubusercontent.com/u/7785625?v=2&s=72"/></a><a href="http://techvivo.blogspot.com/p/elephants.html" target="_blank"><img title="modelephant" src="https://avatars1.githubusercontent.com/u/7784485?v=2&s=72"/></a><a href="http://uchicagoartificers.blogspot.com/" target="_blank"><img title="artifice" src="https://lh6.googleusercontent.com/-10biVUNUFNM/VBOA9lciEdI/AAAAAAAAAkI/iW5yqzn8QEQ/s150-no/artifice.tif"/></a><a href="http://munrolab.bsd.uchicago.edu/" target="_blank"><img title="munrolab" src="http://munrolab.bsd.uchicago.edu/images/people/wormtype/elegans_bw.jpg"></a></div>
                     </li>
                     
                 </ul>
@@ -51,14 +52,16 @@
                       
                         <!-- content -->
                         <div class="row">    
-                          <div class="col-sm-10">
-                            <h3>Graph of Interests</h3>
-                            
+                          <div class="col-sm-8">
+                            <h4><strong>My Interests</strong></h4>
+                            <p>click a subject area to expand; hover for a description</p>
                           </div>
-                          <div class="col-sm-2">
-                          <h4><span class="label label-default">objective</span></h4><h4>
+                          <div class="col-sm-4">
+                          <h4><span class="label label-default">objective statement</span></h4><h4>
+                            <small id="interestDiv" class="text-muted2"  > This graph illustrates the connections between my interests in computing, biomaterials, sustainability, and public outreach.  These four categories underlie what I'm looking for in my professional career. I was interested to see how they might be interrelated so I built this data visualization based off a career planning worksheet I'd filled out.
                             
-                            <small class="text-muted"><a href="#" class="text-muted">Read More</a></small>
+                            </small>
+                            <small class="text-muted"><a id="interestBut" class="text-muted" onclick="showInterestDiv()">Read More</a></small>
                             </h4>
                           </div>
                         </div>
@@ -76,15 +79,18 @@
                         
                         
                         <div class="row">    
-                          <div class="col-sm-10">
-                            <h3>People-Projects-Skills</h3>
-                            
+                          <div class="col-sm-8">
+                            <h4><strong>People-Projects-Skills</strong></h4>
+                            <p>the projects I've worked on, who I worked with, and the skills needed</p>
                           </div>
-                          <div class="col-sm-2">
-                          <h4><span class="label label-default">experience</span></h4><h4>
+                          <div class="col-sm-4">
+                          <h4><span class="label label-default">record of experience</span></h4><h4>
                             
-                            <small class="text-muted"><a href="#" class="text-muted">Read More</a></small>
-                            </h4>
+                            <small id="experienceDiv" class="text-muted2"   > This hive plot charts the diversity of skills and people that it takes to complete many diverse projects.  I realized I've worked on a lot of different things in the past 10 years, and each project took different skillsets and involved interaction with many different organizations.  Trying to make sense of the interconnectivity and flexibility required in the modern workplace can be confusing in a traditional resume, so I built this to help visualize it.
+                            
+                            </small>
+                            <small class="text-muted"><a id="experienceBut" class="text-muted" onclick="showExperienceDiv()">Read More</a></small>
+</h4>
                           </div>
                         </div>
                         <div class="row">    
@@ -99,33 +105,49 @@
                         </div>
                          
                         <div class="row">    
-                          <div class="col-sm-10">
-                            <h3>Hierarchy of Abilities (http://mbostock.github.io/d3/talk/20111116/pack-hierarchy.html)</h3>
-                            
+                          <div class="col-sm-8">
+                            <h4><strong>Hierarchy of Abilities</strong></h4>
+                            <p>categorizing what I can do as a function of how much I've done it</p>
                           </div>
-                          <div class="col-sm-2">
-                          <h4><span class="label label-default">skills</span></h4><h4>
+                          <div class="col-sm-4">
+                          <h4><span class="label label-default">list of technical skills</span></h4><h4>
                             
-                            <small class="text-muted"><a href="#" class="text-muted">Read More</a></small>
-                            </h4>
+                            <small id="skillDiv" class="text-muted2"   > If you're looking for a specific skillset it helps to see how highly your personnel ranks that skill in his or her repertoire.  Toward that goal I built this skill hierarchy where the size of the bubble is proportional to my amount of expertise at that task.  It's currently just self-reported but could easily be updated to pull actual project data.
+                            
+                            </small>
+                            <small class="text-muted"><a id="skillBut" class="text-muted" onclick="showSkillDiv()">Read More</a></small></h4>
                           </div>
                         </div>
-                       
+                       <div class="row">    
+                          <div class="col-sm-12" id="skillbubbles">
+                            
+                          </div>
+                          
+                        </div>
                         <div class="row divider">    
                            <div class="col-sm-12"><hr></div>
                         </div>
                          
                         <div class="row">    
-                          <div class="col-sm-10">
-                            <h3>Timeline (http://xliberation.com/p/sankey.html)</h3>
+                          <div class="col-sm-8">
+                            <h4><strong>Timeline </strong></h4>
+                            <p>tracing my educational path</p>
+                          </div>
+                          <div class="col-sm-4">
+                          <h4><span class="label label-default">educational history</span></h4><h4>
+                            
+                            <small id="timelineDiv" class="text-muted2"   > 
+                            This Sankey diagram tracks how my educational career led to what I know today.  When designing my own course, I sat down to trace the prerequisite knowledge that I'd had to acquire before I'd learned the subject I was teaching. I realized that there were layers upon layers of material that I'd practically forgotten about.  This visualization was an effort to see how specific levels of expertise evolved out of different inputs.  
+                            </small>
+                            <small class="text-muted"><a  id="timelineBut" class="text-muted" onclick="showTimelineDiv()">Read More</a></small></h4>
+                          </div>
+                        </div>
+                        
+                        <div class="row">    
+                          <div class="col-sm-12" id="chart">
                             
                           </div>
-                          <div class="col-sm-2">
-                          <h4><span class="label label-default">education</span></h4><h4>
-                            
-                            <small class="text-muted"><a href="#" class="text-muted">Read More</a></small>
-                            </h4>
-                          </div>
+                          
                         </div>
                         
                         <div class="row divider">    
@@ -133,14 +155,14 @@
                         </div>
                          
                         <div class="row">    
-                          <div class="col-sm-10">
+                          <div class="col-sm-8">
                             <h3>Conventional CV</h3>
                             
                           </div>
-                          <div class="col-sm-2">
+                          <div class="col-sm-4">
                           <h4><span class="label label-default">printable</span></h4><h4>
                             
-                            <small class="text-muted"><a href="#" class="text-muted">Read More</a></small>
+                            <small class="text-muted"><a  class="text-muted">Read More</a></small>
                             </h4>
                           </div>
                         </div>
@@ -173,140 +195,186 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
         <script src="http://d3js.org/d3.v3.min.js"></script>
+                
+<script>
+function showInterestDiv() {
+    if(document.getElementById('interestDiv').style.display == "block") {
+        document.getElementById('interestDiv').style.display = "none";
+        document.getElementById('interestBut').text = "Read more";
+    } else {
+        document.getElementById('interestDiv').style.display = "block";
+        document.getElementById('interestBut').text = "Hide";
+   }
+}
+
+function showExperienceDiv() {
+    if(document.getElementById('experienceDiv').style.display == "block") {
+        document.getElementById('experienceDiv').style.display = "none";
+        document.getElementById('experienceBut').text = "Read more";
+    } else {
+        document.getElementById('experienceDiv').style.display = "block";
+        document.getElementById('experienceBut').text = "Hide";
+   }
+}
+
+function showSkillDiv() {
+    if(document.getElementById('skillDiv').style.display == "block") {
+        document.getElementById('skillDiv').style.display = "none";
+        document.getElementById('skillBut').text = "Read more";
+    } else {
+        document.getElementById('skillDiv').style.display = "block";
+        document.getElementById('skillBut').text = "Hide";
+   }
+}
+
+function showTimelineDiv() {
+    if(document.getElementById('timelineDiv').style.display == "block") {
+        document.getElementById('timelineDiv').style.display = "none";
+        document.getElementById('timelineBut').text = "Read more";
+    } else {
+        document.getElementById('timelineDiv').style.display = "block";
+        document.getElementById('timelineBut').text = "Hide";
+   }
+}
+</script>
+                
 <script>
 
 var w = $("#forcegraph").innerWidth(),
-    h = 600,
-    node,
-    link,
-    root;
+    h = 600;
+var r = 30*w/800;
+    
+var clicked = ["me","outreach","computation"];
 
 var force = d3.layout.force()
-    .on("tick", tick)
-    .charge(function(d) { return d._children ? -200-d.size / 100 : -200; })
-    .linkDistance(function(d) { return d.target._children ? d.target.size/300 : 60; })
-    .size([w, h ]);
+    .charge(function(d){ return clicked.indexOf(d.src)>-1 ? -3000*r/30 : 0;})
+    .linkStrength(0.2)
+    .linkDistance(function(d) {return 50*r/30;})
+    .size([w, h]);
 
 var vis = d3.select("#forcegraph").append("svg:svg")
     .attr("width", w)
     .attr("height", h);
 
-d3.json("js/readme.json", function(json) {
-  root = json;
-  root.x = w / 2;
-  root.y = h / 2 ;
-  update();
+d3.csv("js/graph.csv", function(links) {
+  var nodesByName = {};
+
+  // Create nodes for each unique source and target.
+  links.forEach(function(link) {
+    link.target = nodeByNamePlus(link.target,link.im,link.size,link.source,link.desc);
+    link.source = nodeByName(link.source);
+  });
+
+  // Extract the array of nodes from the map by name.
+  var nodes = d3.values(nodesByName);
+
+  // Create the link lines.
+  var link = vis.selectAll(".link")
+      .data(links)
+    .enter().append("line")
+      .attr("class", "link");
+
+  // Create the node circles.
+  var node = vis.selectAll(".node")
+      .data(nodes)
+    .enter().append("g")
+      .attr("class", "node")
+      .on("click",click)
+      .call(force.drag);
+      
+  var clip = vis.append("defs").append("svg:clipPath")
+        .attr("id", "clip")
+        .append("svg:circle")
+        .attr("id", "clip-rect")
+        .attr("cx", 0)
+        .attr("cy", 0)
+        .attr("r", r)
+        .attr("stroke","black");
+
+  node.append("image")
+    .attr("xlink:href", function(d) { return d.im ? d.im : "";})
+    .attr("x",-r)
+    .attr("y",-r)
+    .attr("width", 2*r)
+    .attr("height", 2*r)
+    .attr("clip-path","url(#clip)")
+    .attr("title",function(d) {return d.desc ? d.desc  : "";});
+   
+  node.append("text")
+      .attr("dx", function(d) { return -d.name.length*3.5; })
+      .attr("dy", r+10)
+      .text(function(d) { return d.name });   
+      
+  // Start the force layout.
+  force
+      .nodes(nodes)
+      .links(links)
+      .on("tick", tick)
+      .start();
+
+  function tick() {
+    
+    node.style("opacity",function(d) { 
+        d.trans = 0;
+        if(clicked.indexOf(d.src)>-1) d.trans = 1;
+        return d.trans; 
+      });
+      
+      
+    node.attr("transform", function(d) { 
+        d.x = Math.max(r, Math.min(w - 2*r, d.x));
+        d.y = Math.max(h/2, Math.min(h - 2*r, d.y));
+        if(d.src=="me") {
+            d.y = h/4;
+            d.x = Math.max(w/6, Math.min(5*w/6, d.x));
+        }
+        if(d.name=="me") d.y = h/8;
+        return "translate(" + d.x + "," + d.y + ")"; 
+      });
+
+    link.style("opacity",function(d) { return Math.min(d.target.trans,d.source.trans);  });
+    link.attr("x1", function(d) { return d.source.x; })
+        .attr("y1", function(d) { return d.source.y; })
+        .attr("x2", function(d) { return d.target.x; })
+        .attr("y2", function(d) { return d.target.y; });
+
+  }
+
+  function click(d) {
+  if (!d3.event.defaultPrevented) {
+    var ind = clicked.indexOf(d.name);
+    if(ind>0){
+        clicked.splice(ind, 1)
+    } else {
+        clicked.push(d.name);
+    }
+    force.start();
+    }
+  }
+
+  function nodeByName(name) {
+    return nodesByName[name] || (nodesByName[name] = {name: name});
+  }
+  
+  function nodeByNamePlus(name,im,size,src,desc) {
+    return nodesByName[name] || (nodesByName[name] = {name: name, im: im, size: size, src: src, desc: desc});
+  }
 });
 
 $( window ).resize(function() {
     w = $("#forcegraph").innerWidth();
     force.size([w, h ]);
     vis.attr("width", w);
-    update();
 });
 
-function update() {
-  var nodes = flatten(root),
-      links = d3.layout.tree().links(nodes);
 
-  // Restart the force layout.
-  force
-      .nodes(nodes)
-      .links(links)
-      .start();
 
-  // Update the links…
-  link = vis.selectAll(".link")
-       .data(links, function(d) { return d.target.id; });
-
-  // Enter any new links.
-  link.enter().insert("svg:line", ".node")
-      .attr("class", "link")
-      .attr("x1", function(d) { return d.source.x; })
-      .attr("y1", function(d) { return d.source.y; })
-      .attr("x2", function(d) { return d.target.x; })
-      .attr("y2", function(d) { return d.target.y; });
-
-  // Exit any old links.
-  link.exit().remove();
-
-  // Update the nodes…
-  node = vis.selectAll(".node")
-      .data(nodes, function(d) { return d.id; })
-      .style("fill", color);
-  
-  // Exit any old nodes.
-  node.exit().remove();
-
-  // Enter any new nodes.
-  node.enter().append("g")
-      .attr("class", "node")
-      .on("click", click)
-      .call(force.drag);
-
-  vis.selectAll("image").remove();
-  
-  node.append("image")
-      .attr("xlink:href", function(d) { return d.im ? d.im : "https://github.com/favicon.ico";})
-      .attr("x",function(d) { return d.children ? -4.5 : -Math.sqrt(d.size) / 6; })
-      .attr("y",function(d) { return d.children ? -4.5 : -Math.sqrt(d.size) / 6; })
-      .attr("width", function(d) { return d.children ? 9 : Math.sqrt(d.size) / 3; })
-      .attr("height", function(d) { return d.children ? 9 : Math.sqrt(d.size) / 3; });
-
- /* node.append("text")
-      .attr("dx", 0)
-      .attr("dy", 0)
-      .text(function(d) { return d.name });   
-      */ 
-  
-}
-
-function tick() {
-  link.attr("x1", function(d) { return d.source.x; })
-      .attr("y1", function(d) { return d.source.y; })
-      .attr("x2", function(d) { return d.target.x; })
-      .attr("y2", function(d) { return d.target.y; });
-
-  node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
-}
-
-// Color leaf nodes orange, and packages white or blue.
-function color(d) {
-  return d._children ? "#3182bd" : d.children ? "#c6dbef" : "#fd8d3c";
-}
-
-// Toggle children on click.
-function click(d) {
-  if (!d3.event.defaultPrevented) {
-    if (d.children) {
-      d._children = d.children;
-      d.children = null;
-    } else {
-      d.children = d._children;
-      d._children = null;
-    }
-    update();
-  }
-}
-
-// Returns a list of all nodes under the root.
-function flatten(root) {
-  var nodes = [], i = 0;
-
-  function recurse(node) {
-    if (node.children) node.size = node.children.reduce(function(p, v) { return p + recurse(v); }, 0);
-    if (!node.id) node.id = ++i;
-    nodes.push(node);
-    return node.size;
-  }
-
-  root.size = recurse(root);
-  return nodes;
-}
 
 </script>
 
-      
+    <script src='js/sankey.js'></script>
+    <script src='js/hankeysankey.js'></script>
+    <script src='js/bubble.js'></script>  
     <script src='js/lib_data.js'></script>
     <script src='js/lib_link.js'></script>
     <script src='js/lib_mouse.js'></script>

@@ -146,7 +146,9 @@ return '5, -5';
       .attr("x", cx)
       .text( function(d) { return d.node.name;})
       .attr("font-family", "monospace")
-      .attr("font-size", "15px");
+      .attr("font-size", "15px")
+      .on('mouseover', on_mouseover_node)
+    .on('mouseout',  on_mouseout);
 
     
 };

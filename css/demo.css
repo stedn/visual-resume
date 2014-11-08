@@ -17,10 +17,10 @@
 .node .active_its ellipse          { stroke:         #3D2117;  }
 .node .active_mo ellipse          { stroke:         #C84127;    }
 
-.node .labl                {visibility: hidden;}
-.node .active_it .labl                {visibility: visible;}
-.node .active_is .labl                {visibility: visible;}
-.node .active_its .labl                {visibility: visible;}
+.node .labl                {opacity: 0.5;}
+.node .active_it .labl                {opacity: 1;}
+.node .active_is .labl                {opacity: 1;}
+.node .active_its .labl                {opacity: 1;}
 
 
 .link {
