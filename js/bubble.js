@@ -30,7 +30,13 @@ d3.json("js/area.json", function(data) {
       .attr("cx", function(d) { return d.x; })
       .attr("cy", function(d) { return d.y; })
       .attr("r", function(d) { return d.r; })
-      .on("click", function(d) { return zoom(node == d ? root : d); });
+      .on("click", function(d) { return zoom(node == d ? root : d); })
+      .on("mouseover",function(d) {
+      vis2.selectAll("text").style("fill",function(d2) {return d2.name==d.name ? "#ff7f0e" : d2.children ? d2.mycolor: "#888";});
+      })
+      .on("mouseout",function(d) {
+      vis2.selectAll("text").style("fill", function(d2) {return d2.children ? d2.mycolor: "#888";});
+      });
 
   vis2.selectAll("text")
       .data(nodes)
@@ -39,8 +45,10 @@ d3.json("js/area.json", function(data) {
       .attr("x", function(d) { return d.x; })
       .attr("y", function(d) { return d.y; })
       .attr("dy", ".35em")
+      .attr("font-size", function(d) {return Math.max(d.r/4,5);})
       .attr("text-anchor", "middle")
-      .style("opacity", function(d) { return d.r > 20 ? 1 : 0; })
+      .style("fill",function(d) {return d.children ? d.mycolor: "#888";})
+      .style("opacity", function(d) { return d.r < 20 ? 0 : d.children ? 1 : 0.5; })
       .text(function(d) { return d.name; });
 
   d3.select(window).on("click", function() { zoom(root); });
@@ -51,6 +59,7 @@ function zoom(d, i) {
   x.domain([d.x - d.r, d.x + d.r]);
   y.domain([d.y - d.r, d.y + d.r]);
 
+  node = d;
   var t = vis2.transition()
       .duration(d3.event.altKey ? 7500 : 750);
 
@@ -62,9 +71,9 @@ function zoom(d, i) {
   t.selectAll("text")
       .attr("x", function(d) { return x(d.x); })
       .attr("y", function(d) { return y(d.y); })
-      .style("opacity", function(d) { return k * d.r > 20 ? 1 : 0; });
+      .attr("font-size", function(d) {return Math.max(k*d.r/4,5);})
+      .style("opacity", function(d) { return node==d ? 0.1: k * d.r < 20 ? 0 : d.children ? 1 : 0.8; });
 
-  node = d;
   d3.event.stopPropagation();
 }
 

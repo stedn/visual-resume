@@ -2,7 +2,7 @@
 var units = "Widgets";
  
 var margin = {top: 10, right: 10, bottom: 10, left: 10},
-    width = $("#chart").innerWidth() - margin.left - margin.right,
+    width = 4000 - margin.left - margin.right,
     height = 600 - margin.top - margin.bottom;
  
 var formatNumber = d3.format(",.0f"),    // zero decimal places
@@ -85,14 +85,11 @@ d3.json("js/sankeygreenhouse.json", function(error, graph) {
  
 // add in the title for the nodes
   node.append("text")
-      .attr("x", -6)
-      .attr("y", function(d) { return d.dy / 2; })
       .attr("dy", ".35em")
       .attr("text-anchor", "end")
-      .attr("transform", null)
+      .attr("transform", function(d) {return "translate("+sankey.nodeWidth()/2+", "+ d.dy/2 + ") rotate(-90)";})
       .text(function(d) { return d.name; })
     .filter(function(d) { return d.x < width / 2; })
-      .attr("x", 6 + sankey.nodeWidth())
       .attr("text-anchor", "start");
  
 // the function for moving the nodes

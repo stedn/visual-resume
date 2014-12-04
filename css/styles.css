@@ -18,6 +18,12 @@ background: linear-gradient(to bottom, rgba(255,255,255,1) 47%,rgba(227,235,252,
   font-size:12px;
 }
 
+.node-rect {
+ fill:none;
+ stroke:#00A;
+ stroke-width:4px;
+}
+
 .link {
   fill: none;
 }
@@ -109,6 +115,12 @@ a {
 padding:3px ;
   margin:10px 1px 10px 0;
 }
+#sidebar #mysiteslabel{
+  margin:0 30%;
+  border:2px solid #777777;
+  border-bottom:0;
+  border-radius:5px;
+}
 #sidebar #mysites{
   border:2px solid #777777;
   border-radius:5px;
@@ -188,7 +200,7 @@ small.text-muted2 {
 }
 
 #skillbubbles text {
-  font-size: 11px;
+  /*font-size: 11px;*/
   pointer-events: none;
 }
 
@@ -217,6 +229,9 @@ small.text-muted2 {
   pointer-events: none;
 }
 
+#chart {
+overflow:scroll;
+}
 
 #chart .node rect {
   cursor: move;

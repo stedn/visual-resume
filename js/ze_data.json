@@ -1,77 +1,111 @@
 [
   {
-    "name":     "Me",
-    "category":     "me",
+    "name":     "Jason Perera",
+    "category":     "@rtifice",
     "ref": "#",
-    "imports":  [ "active matter", "pulse contractions", "google maps", "tech vivo", "dance wii", "artifice site"]
+    "imports":  [ "tutoring"]
   }, {
-    "name":     "Jon",
+    "name":     "Pete Dahlberg",
+    "category":     "@rtifice",
+    "ref": "#",
+    "imports":  [ "tech vivo", "tutoring"]
+  }, {
+    "name":     "Adam Sheldon",
+    "category":     "Bionic Trader",
+    "ref": "#",
+    "imports":  [ "keyboard trader"]
+  }, {
+    "name":     "Jon Michaux",
     "category":     "Uchicago",
     "ref": "#",
-    "imports":  [ "pulse contractions"]
+    "imports":  [ "pulse contractions", "dance wiimotes"]
   }, {
-    "name":     "Edwin",
+    "name":     "Francois Robin",
+    "category":     "Uchicago",
+    "ref": "#",
+    "imports":  [ "single molecule imaging", "pulse contractions"]
+  }, {
+    "name":     "Samantha Stam",
+    "category":     "Uchicago",
+    "ref": "#",
+    "imports":  [ "active matter"]
+  }, {
+    "name":     "Ed Munro",
     "category":     "Uchicago",
     "ref": "#",
     "imports":  [ "pulse contractions", "active matter"]
   }, {
-    "name":     "Margaret",
-    "category":     "Uchicago",
+    "name":     "Peter Bajcsy",
+    "category":     "UIUC",
     "ref": "#",
-    "imports":  [  "active matter"]
-  },
-
+    "imports":  [ "document appraisal"]
+  }, {
+    "name":     "Gene Robinson",
+    "category":     "UIUC",
+    "ref": "#",
+    "imports":  [ "bee behavior"]
+  }, 
 
   {
+    "name":     "single molecule imaging",
+    "category":     "PhD",
+    "ref": "#",
+    "imports":  [ "programming", "microscopy", "statistics" ]
+  },{
     "name":     "active matter",
     "category":     "PhD",
     "ref": "#",
-    "imports":  [ "java", "microscopy","dissection","pipetting" ]
+    "imports":  [ "programming", "microscopy","stat mech","modeling" ]
   }, {
     "name":     "pulse contractions",
     "category":     "PhD",
     "ref": "#",
-    "imports":  [ "MATLAB" ]
-  }, {
-    "name":     "google maps",
-    "category":     "hobby",
-    "ref": "#",
-    "imports":  [ "HTML" ]
+    "imports":  [ "programming", "diff eq" ]
   }, {
     "name":     "tech vivo",
-    "category":     "hobby",
+    "category":     "communication",
     "ref": "#",
-    "imports":  [ "HTML","web" ]
+    "imports":  [ "web" ]
   }, {
-    "name":     "dance wii",
+    "name":     "keyboard trader",
+    "category":     "software",
+    "ref": "#",
+    "imports":  [ "programming" ]
+  }, {
+    "name":     "dance wiimotes",
     "category":     "artifice",
     "ref": "#",
-    "imports":  [ "java" ]
+    "imports":  [ "programming", "statistics" ]
   }, {
-    "name":     "artifice site",
+    "name":     "tutoring",
     "category":     "artifice",
     "ref": "#",
-    "imports":  [ "HTML","web" ]
+    "imports":  [ "web" ]
+  }, {
+    "name":     "document appraisal",
+    "category":     "undergrad",
+    "ref": "#",
+    "imports":  [ "programming", "statistics"]
+  }, {
+    "name":     "bee behavior",
+    "category":     "undergrad",
+    "ref": "#",
+    "imports":  [ "programming" ]
   },
 
 
   {
-    "name":     "java",
-    "category":     "prog",
+    "name":     "programming",
+    "category":     "computer",
     "ref": "#",
     "imports":  [ ]
   }, {
-    "name":     "MATLAB",
-    "category":     "prog",
+    "name":     "web",
+    "category":     "computer",
     "ref": "#",
     "imports":  [ ]
   }, {
-    "name":     "HTML",
-    "category":     "prog",
-    "ref": "#",
-    "imports":  [ ]
-  }, {
-    "name":     "dissection",
+    "name":     "modeling",
     "category":     "science",
     "ref": "#",
     "imports":  [ ]
@@ -81,13 +115,18 @@
     "ref": "#",
     "imports":  [ ]
   }, {
-    "name":     "pipetting",
+    "name":     "stat mech",
     "category":     "science",
     "ref": "#",
     "imports":  [ ]
   }, {
-    "name":     "web",
-    "category":     "design",
+    "name":     "diff eq",
+    "category":     "math",
+    "ref": "#",
+    "imports":  [ ]
+  },{
+    "name":     "statistics",
+    "category":     "math",
     "ref": "#",
     "imports":  [ ]
   }

@@ -1,0 +1,136 @@
+/* move special fonts to HTML head for better performance */
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,700');
+
+
+/* custom template */
+html, body {
+   height: 100%;
+   font-family:'Open Sans',arial,sans-serif;
+}
+
+a {
+  color:#FF9966;
+}
+
+.wrapper, .row {
+   height: 100%;
+   margin-left:0;
+   margin-right:0;
+}
+
+.wrapper:before, .wrapper:after,
+.column:before, .column:after {
+    content: "";
+    display: table;
+}
+
+.wrapper:after,
+.column:after {
+    clear: both;
+}
+
+.column {
+    height: 100%;
+    overflow: auto;
+    *zoom:1;
+}
+
+.column .padding {
+    padding: 20px;
+    margin:10px;
+}
+
+.box {
+  	bottom: 0; /* increase for footer use */
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image:url('https://lh6.googleusercontent.com/-hbnPhXHgEYM/U58Wu2l444I/AAAAAAAAAI0/vJRzlnzTHUA/w807-h605-no/P1010105.JPG');
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+
+#sidebar, #sidebar a {
+    height:100%;
+    color:#ffffff;
+    background-color:transparent;
+	text-shadow:1px 0 1px #888888;
+}
+
+
+#sidebar .bucket a {
+    display:inline-block;
+    margin: 0 5%;
+}
+
+
+#sidebar li {
+  margin:8px;
+}
+#sidebar .fa {
+  font-size:70px;
+}
+#sidebar button {
+padding:3px ;
+  margin:10px 1px 10px 0;
+}
+
+
+
+#sidebar .bucket img{
+  width: 70px;
+  height: 70px;
+}
+
+#sidebar li img{
+  border-radius:5px;
+  margin:8px;
+}
+
+/* center and adjust the sidebar contents on smaller devices */
+@media (max-width: 768px) {
+  .box {
+    position: relative;
+  }
+  #sidebar{
+    text-align:center;
+    margin:0 auto;
+    margin-top:30px;
+    font-size:18px;
+  }
+  #sidebar img.logo {
+    width:40%;
+    margin:0 30% 0
+  }
+}
+
+#sidebar .bucketlabel{
+  width:25%;
+  min-width:300px;
+  margin:0 auto 0 auto;
+  border:2px solid #777777;
+  border-bottom:0;
+  border-radius:5px;
+  font-size:1.2em;
+}
+#sidebar .bucket{
+  width:50%;
+  min-width:500px;
+  margin: 0 auto 0 auto;
+  border:2px solid #777777;
+  border-radius:5px;
+}
+
+
+
+/* bootstrap overrides */
+
+h1,h2,h3 {
+   font-weight:800;
+   font-family:'Open Sans',arial,sans-serif;
+}
+
+
+

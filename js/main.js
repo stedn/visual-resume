@@ -6,11 +6,11 @@
 
     var degree  = Math.PI / 180,
         x_max   = $("#demo_1").innerWidth(),    x_off   = x_max * 0.33,
-        y_max   = 700,    y_off   = y_max * 0.4;
+        y_max   = 700,    y_off   = y_max * 0.5;
 
     if (format === 'conv') {  // "conventional"
       var a_so    =    -160,     
-          a_to    = -25,     a_ts    = (120 ),
+          a_to    = -25,     a_ts    = (125 ),
           i_rad   =   25,     o_rad   = 300;
 
     } else {                  // "rectangular"

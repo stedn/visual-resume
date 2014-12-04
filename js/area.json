@@ -2,34 +2,22 @@
   "name": "",
   "children": [
     {
-      "name": "soft skills",
+      "name": "communication",
       "children": [
         {
-          "name": "speaking",
+          "name": "public speaking",
           "children": [
             {
-              "name": "Tokelau",
-              "size": 1500000
+              "name": "impress.js (Prezi)",
+              "size": 15
             },
             {
-              "name": "Niue",
-              "size": 10010000
+              "name": "Powerpoint",
+              "size": 10
             },
             {
-              "name": "Saint Helena, Ascension, and Tristan da Cunha",
-              "size": 18000000
-            },
-            {
-              "name": "Tuvalu",
-              "size": 36000000
-            },
-            {
-              "name": "Montserrat",
-              "size": 43780000
-            },
-            {
-              "name": "Saint Pierre and Miquelon",
-              "size": 48300000
+              "name": "Keynote",
+              "size": 100
             }
           ]
         },
@@ -37,429 +25,330 @@
           "name": "writing",
           "children": [
             {
-              "name": "Comoros",
-              "size": 837000000
+              "name": "Word",
+              "size": 5
             },
             {
-              "name": "British Virgin Islands",
-              "size": 853400000
+              "name": "LaTex",
+              "size": 10
             },
             {
-              "name": "Saint Kitts and Nevis",
-              "size": 875000000
+              "name": "Blogging",
+              "size": 50
             },
             {
-              "name": "Northern Mariana Islands",
-              "size": 900000000
+              "name": "Grant Applications",
+              "size": 25
             },
             {
-              "name": "Western Sahara",
-              "size": 906500000
+              "name": "Publication Formatting",
+              "size": 10
             },
             {
-              "name": "Dominica",
-              "size": 1014000000
+              "name": "Technical Writing",
+              "size": 10
             },
             {
-              "name": "Samoa",
-              "size": 1094000000
-            },
-            {
-              "name": "Vanuatu",
-              "size": 1186000000
-            },
-            {
-              "name": "Saint Vincent and the Grenadines",
-              "size": 1264000000
-            },
-            {
-              "name": "Gibraltar",
-              "size": 1275000000
-            },
-            {
-              "name": "San Marino",
-              "size": 1371000000
-            },
-            {
-              "name": "Grenada",
-              "size": 1440000000
-            },
-            {
-              "name": "Faroe Islands",
-              "size": 1471000000
-            },
-            {
-              "name": "Antigua and Barbuda",
-              "size": 1495000000
-            },
-            {
-              "name": "Virgin Islands",
-              "size": 1577000000
-            },
-            {
-              "name": "Solomon Islands",
-              "size": 1761000000
-            },
-            {
-              "name": "Guinea-Bissau",
-              "size": 1925000000
-            },
-            {
-              "name": "Cape Verde",
-              "size": 2052000000
-            },
-            {
-              "name": "Greenland",
-              "size": 2133000000
-            },
-            {
-              "name": "Saint Lucia",
-              "size": 2183000000
+              "name": "Creative Writing",
+              "size": 50
             }
           ]
         },
         {
-          "name": "leadership",
+          "name": "graphic design",
           "children": [
             {
-              "name": "Djibouti",
-              "size": 2231000000
+              "name": "Adobe Illustrator",
+              "size": 100
             },
             {
-              "name": "Cayman Islands",
-              "size": 2250000000
+              "name": "ImageJ",
+              "size": 400
             },
             {
-              "name": "Aruba",
-              "size": 2258000000
+              "name": "Adobe Photoshop",
+              "size": 100
             },
             {
-              "name": "Seychelles",
-              "size": 2302000000
+              "name": "ImageMagick",
+              "size": 50
             },
             {
-              "name": "Liberia",
-              "size": 2432000000
+              "name": "Blender",
+              "size": 50
+            }
+          ]
+        },
+        {
+          "name": "web design",
+          "children": [
+            {
+              "name": "HTML",
+              "size": 300
+            },{
+              "name": "CSS",
+              "size": 300
+            },{
+              "name": "Javascript",
+              "size": 300
             },
             {
-              "name": "Guam",
-              "size": 2500000000
+              "name": "SVG",
+              "size": 200
             },
             {
-              "name": "Isle of Man",
-              "size": 2719000000
+              "name": "D3.js",
+              "size": 100
+            }
+          ]
+        },
+        {
+          "name": "art",
+          "children": [
+            {
+              "name": "Collage",
+              "size": 30
             },
             {
-              "name": "Guernsey",
-              "size": 2742000000
+              "name": "Scultpure",
+              "size": 10
             },
             {
-              "name": "Belize",
-              "size": 2786000000
+              "name": "Modeling",
+              "size": 5
+            }
+          ]
+        },
+        {
+          "name": "music",
+          "children": [
+            {
+              "name": "Guitar",
+              "size": 300
             },
             {
-              "name": "Maldives",
-              "size": 2800000000
+              "name": "Bass Guitar",
+              "size": 250
             },
             {
-              "name": "cc",
-              "size": 2838000000
+              "name": "Trombone",
+              "size": 50
             },
             {
-              "name": "New Caledonia",
-              "size": 3158000000
+              "name": "Piano",
+              "size": 25
             },
             {
-              "name": "Andorra",
-              "size": 3169000000
+              "name": "Drum Kit",
+              "size": 50
             },
             {
-              "name": "Liechtenstein",
-              "size": 3200000000
+              "name": "Cello",
+              "size": 10
+            }
+          ]
+        }
+      ]
+    },{
+      "name": "leadership",
+      "children": [
+        {
+          "name": "inspirational",
+          "children": [
+            {
+              "name": "Youth Mentorship",
+              "size": 500
             },
             {
-              "name": "Gambia, The",
-              "size": 3496000000
+              "name": "Team Building",
+              "size": 100
+            }
+          ]
+        },
+        {
+          "name": "managerial",
+          "children": [
+            {
+              "name": "Volunteer Organization Leader",
+              "size": 400
             },
             {
-              "name": "Central African Republic",
-              "size": 3636000000
+              "name": "Lab IT Manager",
+              "size": 750
+            }
+          ]
+        }
+      ]
+    },{
+      "name": "technical",
+      "children": [
+        {
+          "name": "computational",
+          "children": [
+            {
+              "name": "High Performance Computing",
+              "size": 900
             },
             {
-              "name": "Lesotho",
-              "size": 3723000000
+              "name": "Hadoop",
+              "size": 20
             },
             {
-              "name": "Eritrea",
-              "size": 4037000000
+              "name": "Machine Learning",
+              "size": 100
             },
             {
-              "name": "Fiji",
-              "size": 4153000000
+              "name": "MATLAB",
+              "size": 2000
             },
             {
-              "name": "Bhutan",
-              "size": 4309000000
+              "name": "Java",
+              "size": 2000
+            },
+            {
+              "name": "Python",
+              "size": 1000
+            }
+          ]
+        },
+        {
+          "name": "electronic",
+          "children": [
+            {
+              "name": "Computer Hardware",
+              "size": 600
+            },
+            {
+              "name": "Solar Cells",
+              "size": 50
+            },
+            {
+              "name": "Stepper Motors",
+              "size": 100
+            },
+            {
+              "name": "Arduino",
+              "size": 200
+            }
+          ]
+        },
+        {
+          "name": "outdoors",
+          "children": [
+            {
+              "name": "Gardening",
+              "size": 50
+            },
+            {
+              "name": "Backpacking",
+              "size": 40
+            },
+            {
+              "name": "Cycling",
+              "size": 100
+            }
+          ]
+        },
+        {
+          "name": "domestic",
+          "children": [
+            {
+              "name": "Wall Mounting",
+              "size": 10
+            },
+            {
+              "name": "Sawing",
+              "size": 10
+            },
+            {
+              "name": "Electrical",
+              "size": 50
+            },
+            {
+              "name": "Plumbing",
+              "size": 90
             }
           ]
         }
       ]
     },
     {
-      "name": "hard skills",
+      "name": "analytical",
       "children": [
         {
-          "name": "analytical",
+          "name": "mathematical",
           "children": [
             {
-              "name": "Bermuda",
-              "size": 4500000000
+              "name": "Diff Eq",
+              "size": 2000
             },
             {
-              "name": "French Polynesia",
-              "size": 4718000000
+              "name": "Calculus",
+              "size": 2000
             },
             {
-              "name": "Jersey",
-              "size": 5100000000
+              "name": "Geometry",
+              "size": 1000
             },
             {
-              "name": "Burundi",
-              "size": 5184000000
+              "name": "Linear Algebra",
+              "size": 3000
             },
             {
-              "name": "Monaco",
-              "size": 5470000000
-            },
-            {
-              "name": "Guyana",
-              "size": 5851000000
-            },
-            {
-              "name": "Somalia",
-              "size": 5896000000
-            },
-            {
-              "name": "Swaziland",
-              "size": 6231000000
-            },
-            {
-              "name": "Suriname",
-              "size": 6326000000
-            },
-            {
-              "name": "Togo",
-              "size": 6464000000
-            },
-            {
-              "name": "Zimbabwe",
-              "size": 6474000000
-            },
-            {
-              "name": "Sierra Leone",
-              "size": 6795000000
-            },
-            {
-              "name": "Barbados",
-              "size": 6929000000
-            },
-            {
-              "name": "Mauritania",
-              "size": 7115000000
-            },
-            {
-              "name": "Montenegro",
-              "size": 7157000000
-            },
-            {
-              "name": "Timor-Leste",
-              "size": 9507000000
-            },
-            {
-              "name": "Bahamas, The",
-              "size": 10600000000
-            },
-            {
-              "name": "Malta",
-              "size": 10830000000
-            },
-            {
-              "name": "Guinea",
-              "size": 11500000000
-            },
-            {
-              "name": "Niger",
-              "size": 11630000000
+              "name": "Statistics",
+              "size": 1000
             }
           ]
         },
         {
-          "name": "computational",
+          "name": "logical",
           "children": [
             {
-              "name": "Moldova",
-              "size": 12000000000
+              "name": "Bayes",
+              "size": 10
             },
             {
-              "name": "Haiti",
-              "size": 12370000000
-            },
-            {
-              "name": "Iceland",
-              "size": 12410000000
-            },
-            {
-              "name": "West Bank",
-              "size": 12790000000
-            },
-            {
-              "name": "Kosovo",
-              "size": 12860000000
-            },
-            {
-              "name": "Kyrgyzstan",
-              "size": 13130000000
-            },
-            {
-              "name": "Mongolia",
-              "size": 13290000000
-            },
-            {
-              "name": "Rwanda",
-              "size": 13620000000
-            },
-            {
-              "name": "Malawi",
-              "size": 13760000000
-            },
-            {
-              "name": "Benin",
-              "size": 14750000000
-            },
-            {
-              "name": "Namibia",
-              "size": 15930000000
-            },
-            {
-              "name": "Tajikistan",
-              "size": 16220000000
-            },
-            {
-              "name": "Papua New Guinea",
-              "size": 16860000000
-            },
-            {
-              "name": "Laos",
-              "size": 17410000000
-            },
-            {
-              "name": "Mali",
-              "size": 17880000000
-            },
-            {
-              "name": "Armenia",
-              "size": 17970000000
-            },
-            {
-              "name": "Congo, Republic of the",
-              "size": 18070000000
-            },
-            {
-              "name": "Macau",
-              "size": 18470000000
-            },
-            {
-              "name": "Nicaragua",
-              "size": 18880000000
-            },
-            {
-              "name": "Mauritius",
-              "size": 19290000000
+              "name": "Sudoku",
+              "size": 25
             }
           ]
         },
         {
-          "name": "design",
+          "name": "scientific",
           "children": [
             {
-              "name": "Chad",
-              "size": 19560000000
+              "name": "Polymer Physics",
+              "size": 4000
             },
             {
-              "name": "Madagascar",
-              "size": 20640000000
+              "name": "Cell Biology",
+              "size": 1000
+            }
+          ]
+        },
+        {
+          "name": "economic",
+          "children": [
+            {
+              "name": "Microeconomics",
+              "size": 200
             },
             {
-              "name": "Brunei",
-              "size": 21030000000
+              "name": "Finance",
+              "size": 30
+            }
+          ]
+        },
+        {
+          "name": "strategic",
+          "children": [
+            {
+              "name": "Business Strategy",
+              "size": 100
             },
             {
-              "name": "South Sudan",
-              "size": 21120000000
-            },
-            {
-              "name": "Macedonia",
-              "size": 21590000000
-            },
-            {
-              "name": "Zambia",
-              "size": 21880000000
-            },
-            {
-              "name": "Burkina Faso",
-              "size": 22100000000
-            },
-            {
-              "name": "Cyprus",
-              "size": 23720000000
-            },
-            {
-              "name": "Mozambique",
-              "size": 24000000000
-            },
-            {
-              "name": "Georgia",
-              "size": 24540000000
-            },
-            {
-              "name": "Jamaica",
-              "size": 24560000000
-            },
-            {
-              "name": "Gabon",
-              "size": 24770000000
-            },
-            {
-              "name": "Senegal",
-              "size": 25150000000
-            },
-            {
-              "name": "Congo, Democratic Republic of the",
-              "size": 25290000000
-            },
-            {
-              "name": "Albania",
-              "size": 25320000000
-            },
-            {
-              "name": "Equatorial Guinea",
-              "size": 26100000000
-            },
-            {
-              "name": "Trinidad and Tobago",
-              "size": 26490000000
-            },
-            {
-              "name": "Estonia",
-              "size": 27310000000
-            },
-            {
-              "name": "Afghanistan",
-              "size": 29740000000
-            },
-            {
-              "name": "Botswana",
-              "size": 29850000000
+              "name": "The Game of Go",
+              "size": 50
             }
           ]
         }
