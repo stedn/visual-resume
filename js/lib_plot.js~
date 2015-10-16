@@ -126,7 +126,6 @@ return '5, -5';
     .data(g.nodes)
     .enter().append("svg:a")
       .attr("xlink:href", function(d){ return d.ref;})
-      .attr("target","_blank")
       .attr('class', 'node')
       .style('fill', fill)
       .selectAll('g')
