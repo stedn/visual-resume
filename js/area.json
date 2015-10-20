@@ -160,7 +160,28 @@
               "size": 500
             },
             {
+              "name": "Science Outreach",
+              "size": 200
+            },
+            {
               "name": "Team Building",
+              "size": 100
+            }
+          ]
+        },
+        {
+          "name": "administrative",
+          "children": [
+            {
+              "name": "NFP Compliance",
+              "size": 100
+            },
+            {
+              "name": "Grantsmanship",
+              "size": 100
+            },
+            {
+              "name": "Board Secretary",
               "size": 100
             }
           ]
@@ -169,12 +190,16 @@
           "name": "managerial",
           "children": [
             {
-              "name": "Volunteer Organization Leader",
-              "size": 400
+              "name": "Volunteer Recruitment",
+              "size": 300
+            },
+            {
+              "name": "Nonprofit CTO",
+              "size": 1000
             },
             {
               "name": "Lab IT Manager",
-              "size": 750
+              "size": 300
             }
           ]
         }

@@ -48,7 +48,7 @@ d3.json("js/area.json", function(data) {
       .attr("font-size", function(d) {return Math.max(d.r/4,5);})
       .attr("text-anchor", "middle")
       .style("fill",function(d) {return d.children ? d.mycolor: "#888";})
-      .style("opacity", function(d) { return d.r < 20 ? 0 : d.children ? 1 : 0.5; })
+      .style("opacity", function(d) { return d.r < 20 ? 0 : d.r > 300 ? 0 : d.children ? 1 : 0.5; })
       .text(function(d) { return d.name; });
 
   d3.select(window).on("click", function() { zoom(root); });
@@ -72,7 +72,7 @@ function zoom(d, i) {
       .attr("x", function(d) { return x(d.x); })
       .attr("y", function(d) { return y(d.y); })
       .attr("font-size", function(d) {return Math.max(k*d.r/4,5);})
-      .style("opacity", function(d) { return node==d ? 0.1: k * d.r < 20 ? 0 : d.children ? 1 : 0.8; });
+      .style("opacity", function(d) { return node==d ? 0.1: k * d.r < 20 ? 0 : k*d.r > 300 ? 0 : d.children ? 1 : 0.8; });
 
   d3.event.stopPropagation();
 }

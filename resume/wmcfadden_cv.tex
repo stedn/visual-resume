@@ -1,0 +1,154 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+
+\makeatletter
+\renewcommand\@biblabel[1]{-}
+\makeatother
+
+\name{WILL MCFADDEN} % Your name
+\address{$\cdot$ hellowill.makeloft.org $\cdot$}
+\address{(773)~$\cdot$~263~$\cdot$~0181 \\ wmcfadden@uchicago.edu} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf University of Chicago} \hfill {\em exp. May 2016} \\ 
+Ph.D. in Biophysical Science \hfill {GPA: 3.64/4} \\
+Thesis: {\em Computational models of filament recycling in active networks}
+
+{\bf University of Illinois at Urbana-Champaign} \hfill {\em Dec 2009} \\ 
+B.S. in Engineering Physics with minors in Mathematics and Computer Science \hfill {GPA: 3.67/4} 
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Languages \& Markup & C, Java, MATLAB, Python, Javascript, CSS, HTML, LaTex, Markdown \\
+Protocols, Frameworks, APIs & MPI, GAE, Hadoop, Arduino, Numpy, Scipy, pandas, D3, JSON \\
+Software Tools & Git, Photoshop, Illustrator, ImageJ, Eclipse, Spyder, Jupyter
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+\begin{rSubsection}{University of Chicago, Research Computing Center}{Apr 2015 - Present}{Research Assistant}{Chicago, IL}
+\item Analyzed supercomputer power usage to optimize datacenter energy saving strategies
+\item Launched "real-world" week-long benchmarking routines to measure energy vs runtime trade-offs
+
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{University of Chicago, Munro Research Group}{Aug 2010 - Present}{Ph.D. Research Assistant}{Chicago, IL}
+\item Devised statistical methods for novel single-molecule measurement techniques
+\item Collaborated with experimentalists to model active biopolymer materials
+
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Artifice Tech Education}{Dec 2013 - Present}{Board Secretary and CTO}{Chicago, IL}
+\item Launched after-school electronics courses and developed online learning materials
+\item Managed volunteer instructors and aided recruiting efforts to quadruple our volunteer staff
+\item Led development team in administrating internal operations and expanding public relations efforts
+
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Bionic Trader Systems}{Sep 2011 - Dec 2012}{Software QA Consultant}{Chicago, IL}
+\item Advised CEO on user experience and stress testing of financial trading software
+\item Created reference documentation and user tutorials for software deliverable
+
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Institute for Genomic Biology, Robinson Research Group}{Oct 2009 - May 2010}{Compuational Research Assistant}{Urbana, IL}
+\item Built automated video data collection system and data analysis pipeline
+
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{National Center for Supercomputing Applications, ISDA Research Group}{Jun 2008 - Jun 2009}{Research Programmer}{Urbana, IL}
+\item Developed machine vision software for large volume electronic document appraisal
+
+\end{rSubsection}
+
+%------------------------------------------------
+
+
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Awards and Honors
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Awards and Honors}
+	
+	\item University of Chicago Art+Science Collaboration Grant 2011,2015
+	\item NIH Federal Training Grant 2010-2012
+	\item University of Illinois, Student Employee of the Year, Honorable Mention 2010
+	\item University of Illinois, James Scholars 2007-2010
+	\item National Merit Scholarship 2006-2010
+	
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	Publications
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Publications}
+	\nocite{*}
+	\bibliographystyle{plainyrev} %hundreds of styles to choose from
+	\bibliography{pubs}
+
+\end{rSection}
+%----------------------------------------------------------------------------------------
+
+
+\end{document}

@@ -104,21 +104,25 @@ g.svg.selectAll('.axislabl')
   var connectors  = function(d) { return d.connectors; };
   var cx          = function(d) { return g.radius_f(d.node.index); };
   var fill        = function(d) { return g.color_f(d.packageName); };
-var positioner        = function(type, len) { 
-if(type=='target'){
-return '-'+(8*len+20)+', 0';
-}else if(type=='source'){
-return '-'+(8*len+20)+', 7';
-}else{
-return '5, -5';
-}
-};
+  var positioner  = function(type, len) { 
+        if(type=='target'){
+                return '-'+(8*len+20)+', 0';
+        }else if(type=='source'){
+                return '-'+(8*len+20)+', 7';
+        }else{
+                return '5, -5';
+        }
+  };
 
   var transform   = function(d) {
     return 'rotate(' + degrees( g.angle_f(d.type) ) + ')';
   };
   var rotandtransform   = function(d) {
-    return  'translate('+positioner(d.type, d.node.name.length/1.2) + ') rotate(' + degrees( g.angle_f(d.type) ) + ') rotate('+(-degrees( g.angle_f(d.type) ))+', ' + g.radius_f(d.node.index) + ', 0)';
+          if(d.type=='target' || d.type=='source'){
+            return 'translate('+positioner(d.type, d.node.name.length/1.2) + ') rotate(' + degrees( g.angle_f(d.type) ) + ') rotate('+(-degrees( g.angle_f(d.type) ))+', ' + g.radius_f(d.node.index) + ', 0)';
+          }else{
+            return 'translate('+positioner(d.type, d.node.name.length/1.2) + ') rotate(' + degrees( g.angle_f(d.type) ) + ') rotate('+(-2*degrees( g.angle_f(d.type) ))+', ' + g.radius_f(d.node.index) + ', 0)';
+          }
   };
   gEnter = g.svg.append('g')
     .attr('class', 'nodes')
@@ -142,7 +146,7 @@ return '5, -5';
     .on('mouseout',  on_mouseout);
 
   gEnter.append('text')
-      .attr('class', 'labl')
+      .attr('class', function(d) { return 'labl '+d.type;})
       .attr('transform', rotandtransform)
       .attr("x", cx)
       .text( function(d) { return d.node.name;})
