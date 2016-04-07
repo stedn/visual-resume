@@ -1,5 +1,23 @@
 \begin{thebibliography}{1}
 
+\bibitem{bps2016}
+William McFadden~Jon Michaux and Edwin Munro.
+\newblock Modeling the role of filament recycling in steady-state flows of
+  actomyosin networks.
+\newblock In {\em Biophysical Society 60th Annual Meeting}, 2016.
+
+\bibitem{edeals}
+Will McFadden Anita Nikolich~Ray Parpart and Birali Runesha.
+\newblock Saving on data center energy bills with edeals: Electricity
+  demand-response easy adjusted load shifting.
+\newblock In {\em USENIX Workshop on Cool Topics in Sustainable Data Centers},
+  2016.
+
+\bibitem{McFadden2015}
+W~McFadden A~Nikolich S~Jacobs, R~Parpart and B~Runesha.
+\newblock Conserving energy in heterogeneous clusters.
+\newblock In {\em MindBytes Research Computing Expo and Symposium}, 2015.
+
 \bibitem{Robin2014}
 Francois~B Robin, William~M McFadden, Baixue Yao, and Edwin~M Munro.
 \newblock Single-molecule analysis of cell surface dynamics in caenorhabditis

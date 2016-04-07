@@ -2,6 +2,16 @@
 % Encoding: UTF-8
 
 
+@Conference{edeals,
+  Title                    = {Saving on Data Center Energy Bills with EDEALS: Electricity Demand-response Easy Adjusted Load Shifting},
+  Author                   = {Will McFadden Anita Nikolich Ray Parpart and Birali Runesha},
+  Booktitle                = {USENIX Workshop on Cool Topics in Sustainable Data Centers},
+  Year                     = {2016},
+
+  Owner                    = {will},
+  Timestamp                = {2016.02.11}
+}
+
 @Conference{Kooper2009,
   Title                    = {Mining large size complex PDF documents for industrial knowledge management and
 preservation.},
@@ -34,6 +44,16 @@ Bajcsy},
   Url                      = {http://dx.doi.org/10.1038/nmeth.2928}
 }
 
+@Conference{McFadden2015,
+  Title                    = {Conserving Energy In Heterogeneous Clusters},
+  Author                   = {S Jacobs, R Parpart, W McFadden, A Nikolich, and B Runesha},
+  Booktitle                = {MindBytes Research Computing Expo and Symposium},
+  Year                     = {2015},
+
+  Owner                    = {will},
+  Timestamp                = {2015.10.27}
+}
+
 @Conference{Lee2008,
   Title                    = {Text, Image and Vector Graphics Based Appraisal of
 Contemporary Documents},
@@ -48,7 +68,7 @@ Contemporary Documents},
 @Conference{McFadden2012,
   Title                    = {Physical models of cortical flows during polarity maintenance in C. elegans embryos},
   Author                   = {W. McFadden, J. Alberts, and E. Munro},
-  Booktitle                = {ASCB Annual Meeting 2012},
+  Booktitle                = {ASCB Annual Meeting},
   Year                     = {2012},
 
   Owner                    = {will},
@@ -64,6 +84,16 @@ Information Systems for Archival Appraisals of Contemporary Documents},
 
   Owner                    = {will},
   Timestamp                = {2015.10.20}
+}
+
+@Conference{bps2016,
+  Title                    = {Modeling the role of filament recycling in steady-state flows of actomyosin networks},
+  Author                   = {William McFadden, Jon Michaux, and Edwin Munro},
+  Booktitle                = {Biophysical Society 60th Annual Meeting},
+  Year                     = {2016},
+
+  Owner                    = {will},
+  Timestamp                = {2016.03.10}
 }
 
 @InBook{McFaddenChap2010,

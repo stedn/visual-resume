@@ -69,9 +69,44 @@
                           
                         </div>
 
+                         </div>
                         <div class="row divider">    
                            <div class="col-sm-12"><hr></div>
                         </div>
+                        
+                        <div class="row">    
+                          <div class="col-sm-8">
+                            <h4><strong>My Interests</strong></h4>
+                            <p>click to expand; hover for description; drag around for fun</p>
+                          </div>
+                          <div class="col-sm-4">
+                          <h4><span class="label label-default"><a href="http://bl.ocks.org/mbostock/1062288" target="_blank">Force Plot</a></span></h4><h4>
+                            <small id="interestDiv" class="text-muted2"  > This graph illustrates the connections between my interests in computing, biomaterials, sustainability, and public outreach. 
+                            
+                            </small>
+                            <small class="text-muted"><a id="interestBut" class="text-muted" onclick="showInterestDiv()">Read More</a></small>
+                            </h4>
+                          </div>
+                        </div>
+                        
+                        <div class="row">    
+                          <div class="col-sm-12" id="forcegraph">
+                            
+                          </div>
+                          
+                        </div>
+                        
+                        <div class="row divider">    
+                           <div class="col-sm-12"><hr></div>
+                        </div>
+                        
+                        
+                        
+                        
+                        <div class="row divider">    
+                           <div class="col-sm-12"><hr></div>
+                        </div>
+                        
                         
                         <div class="row">    
                           <div class="col-sm-8">
@@ -118,36 +153,7 @@
                             
                           </div>
                           
-                        </div>
-                        <div class="row divider">    
-                           <div class="col-sm-12"><hr></div>
-                        </div>
-                        
-                        <div class="row">    
-                          <div class="col-sm-8">
-                            <h4><strong>My Interests</strong></h4>
-                            <p>click to expand; hover for description; drag around for fun</p>
-                          </div>
-                          <div class="col-sm-4">
-                          <h4><span class="label label-default"><a href="http://bl.ocks.org/mbostock/1062288" target="_blank">Force Plot</a></span></h4><h4>
-                            <small id="interestDiv" class="text-muted2"  > This graph illustrates the connections between my interests in computing, biomaterials, sustainability, and public outreach. 
-                            
-                            </small>
-                            <small class="text-muted"><a id="interestBut" class="text-muted" onclick="showInterestDiv()">Read More</a></small>
-                            </h4>
-                          </div>
-                        </div>
-                        
-                        <div class="row">    
-                          <div class="col-sm-12" id="forcegraph">
-                            
-                          </div>
-                          
-                        </div>
-                        
-                        <div class="row divider">    
-                           <div class="col-sm-12"><hr></div>
-                        </div>
+                       
                         
                         
                         
@@ -277,7 +283,7 @@ var w = $("#forcegraph").innerWidth(),
     h = 600;
 var r = 30*w/800;
     
-var clicked = ["me","outreach","computation"];
+var clicked = ["me","teaching","computation"];
 
 var force = d3.layout.force()
     .charge(function(d){ return clicked.indexOf(d.src)>-1 ? -3000*r/30 : 0;})

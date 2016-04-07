@@ -1,22 +1,22 @@
 source,target,im,desc
 me,me,im/face_goof.jpg,Will McFadden: me
 me,computation,http://www.researchtrends.com/wp-content/uploads/2012/09/Network-314x235.jpg,Is all life just an elaborate calculation? I don't know . . . 
-computation,supercomputing,http://cdn9.whealmedia.com/wp-content/uploads/datacenter.jpg?3b00b5,I write c/java/matlab programs for launch on supercomputers
+computation,supercomputing,http://cdn9.whealmedia.com/wp-content/uploads/datacenter.jpg?3b00b5,I write java/python/matlab programs for launch on supercomputers
 computation,simulations,https://pbs.twimg.com/profile_images/378800000220648271/14174370270decbb931268fb6f92bfd5_400x400.jpeg,I like to convert abstract ideas into quantitative models
-computation,data analysis,http://idg.bg/test/cio/2014/6/27/6445-cloud_big_data_0.jpg,I want to be able to parallelize all of my work MapReduce style
-me,biomaterials,http://web.mit.edu/mbuehler/www/20100312125010-3.jpg,the stuff of life
+computation,data analysis,http://idg.bg/test/cio/2014/6/27/6445-cloud_big_data_0.jpg,I analye data... a lot
+me,biomaterials,http://web.mit.edu/mbuehler/www/20100312125010-3.jpg,My PhD is on modeling active biomaterials
 biomaterials,polymer physics,http://www.reading.ac.uk/web/MultimediaFiles/maths-entangledpolymers.jpg,my thesis centered around building theories of polymer networks
 biomaterials,active matter,http://www.brandeis.edu/departments/physics/hagan/research/images/starlings.jpg,I'm interested in creating materials that self-organize to do useful, novel things
-biomaterials,synthetic biology,http://peccoud.vbi.vt.edu/wp-content/uploads/2012/08/image.pcol_.v02.i18.g001.png,I'd like to program biological systems to carry out useful functions
-me,sustainability,http://sustainability.rpi.edu/images/sustainability_studies.jpg,when the world's energy consumption is equal to that incident from the sun
-sustainability,renewables,http://topdiysolarpanels.net/wp-content/uploads/2013/03/Top-10-renewable-energy-sources.jpg,I work on hobby projects that bring renewable technology into the home
-sustainability,agriculture,http://groundswellblog.files.wordpress.com/2009/12/farming1.jpg,I'm still a farm boy at heart
-sustainability,efficiency,http://s3.amazonaws.com/static.texastribune.org/media/images/energyefficiency_jpg_800x1000_q100.jpg,reduce reuse recycle
-me,outreach,http://tn.en.fishki.net/26/upload/en/201211/01/2064/d1c87a955e44231f01e9bc203aa97a7a.jpg,reaching out to touch someone
+biomaterials,synthetic biology,http://peccoud.vbi.vt.edu/wp-content/uploads/2012/08/image.pcol_.v02.i18.g001.png,I'm interested in programming biological systems to carry out useful functions
+me,sustainability,http://sustainability.rpi.edu/images/sustainability_studies.jpg,when the world's power consumption is equal to that incident from the sun
+sustainability,renewables,http://topdiysolarpanels.net/wp-content/uploads/2013/03/Top-10-renewable-energy-sources.jpg,I believe we can survive on renewables
+sustainability,agriculture,http://groundswellblog.files.wordpress.com/2009/12/farming1.jpg,I'm interested in making our agricultural system more effficient
+sustainability,efficiency,http://s3.amazonaws.com/static.texastribune.org/media/images/energyefficiency_jpg_800x1000_q100.jpg,I research energy efficiency and computing
+me,teaching,http://tn.en.fishki.net/26/upload/en/201211/01/2064/d1c87a955e44231f01e9bc203aa97a7a.jpg,educating the public and the next generation of scientists
 computation,web design,http://restaurantengine.com/wp-content/uploads/2012/10/free-web-traffic.jpg,I build websites to communicate
-outreach,science blogging,https://avatars3.githubusercontent.com/u/7784380?v=2&s=72,I write a blog called tech vivo about synthetic biology and biological modeling
-outreach,online courses,https://avatars1.githubusercontent.com/u/7784485?v=2&s=72,I've built an online course for teaching computational modeling
-outreach,youth outreach,https://lh6.googleusercontent.com/-10biVUNUFNM/VBOA9lciEdI/AAAAAAAAAkI/iW5yqzn8QEQ/s150-no/artifice.tif,I volunteer at the @rtifice youth hackerspace on the southside of Chicago
+teaching,science blogging,https://avatars3.githubusercontent.com/u/7784380?v=2&s=72,I write a blog called tech vivo about synthetic biology and biological modeling
+teaching,online courses,https://avatars1.githubusercontent.com/u/7784485?v=2&s=72,I've built an online course for teaching computational modeling
+teaching,youth outreach,https://lh6.googleusercontent.com/-10biVUNUFNM/VBOA9lciEdI/AAAAAAAAAkI/iW5yqzn8QEQ/s150-no/artifice.tif,I volunteer at the @rtifice youth hackerspace on the southside of Chicago
 agriculture,synthetic biology
 active matter,simulations
 web design,youth outreach

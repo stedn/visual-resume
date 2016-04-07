@@ -7,6 +7,10 @@ Too many commas in name 1 of "Rob Kooper, William McFadden, Jason Kastner, Micha
 while executing---line 1252 of file plainyrev.bst
 Too many commas in name 1 of "Rob Kooper, William McFadden, Jason Kastner, Michal Ondrejcek, Kenton McHenry and Peter Bajcsy" for entry Kooper2009
 while executing---line 1252 of file plainyrev.bst
+Name 1 in "S Jacobs, R Parpart, W McFadden, A Nikolich, and B Runesha" has a comma at the end for entry McFadden2015
+while executing---line 1252 of file plainyrev.bst
+Too many commas in name 1 of "S Jacobs, R Parpart, W McFadden, A Nikolich, and B Runesha" for entry McFadden2015
+while executing---line 1252 of file plainyrev.bst
 Name 1 in "W. McFadden, J. Alberts, and E. Munro" has a comma at the end for entry McFadden2012
 while executing---line 1252 of file plainyrev.bst
 Too many commas in name 1 of "W. McFadden, K. McHenry, R. Kooper, M. Ondrejcek, A. Yahja and P. Bajcsy" for entry McFadden2008
@@ -15,6 +19,10 @@ Too many commas in name 1 of "W. McFadden, K. McHenry, R. Kooper, M. Ondrejcek, 
 while executing---line 1252 of file plainyrev.bst
 Name 1 in "William McFadden, Rob Kooper, S-C Lee, and Peter Bajcsy" has a comma at the end for entry McFaddenChap2010
 while executing---line 1252 of file plainyrev.bst
+Name 1 in "S Jacobs, R Parpart, W McFadden, A Nikolich, and B Runesha" has a comma at the end for entry McFadden2015
+while executing---line 1293 of file plainyrev.bst
+Too many commas in name 1 of "S Jacobs, R Parpart, W McFadden, A Nikolich, and B Runesha" for entry McFadden2015
+while executing---line 1293 of file plainyrev.bst
 Name 1 in "W. McFadden, J. Alberts, and E. Munro" has a comma at the end for entry McFadden2012
 while executing---line 1293 of file plainyrev.bst
 Name 1 in "William McFadden, Rob Kooper, S-C Lee, and Peter Bajcsy" has a comma at the end for entry McFaddenChap2010
@@ -28,45 +36,45 @@ Too many commas in name 1 of "W. McFadden, K. McHenry, R. Kooper, M. Ondrejcek, 
 while executing---line 1293 of file plainyrev.bst
 Too many commas in name 1 of "W. McFadden, K. McHenry, R. Kooper, M. Ondrejcek, A. Yahja and P. Bajcsy" for entry McFadden2008
 while executing---line 1293 of file plainyrev.bst
-You've used 6 entries,
+You've used 9 entries,
             2525 wiz_defined-function locations,
-            618 strings with 5749 characters,
-and the built_in function-call counts, 3119 in all, are:
-= -- 400
-> -- 88
+            633 strings with 6329 characters,
+and the built_in function-call counts, 4584 in all, are:
+= -- 598
+> -- 127
 < -- 2
-+ -- 80
-- -- 158
-* -- 137
-:= -- 508
-add.period$ -- 18
-call.type$ -- 6
-change.case$ -- 25
-chr.to.int$ -- 24
-cite$ -- 13
-duplicate$ -- 164
-empty$ -- 184
-format.name$ -- 28
-if$ -- 649
++ -- 121
+- -- 238
+* -- 185
+:= -- 746
+add.period$ -- 27
+call.type$ -- 9
+change.case$ -- 37
+chr.to.int$ -- 36
+cite$ -- 19
+duplicate$ -- 247
+empty$ -- 271
+format.name$ -- 40
+if$ -- 958
 int.to.chr$ -- 0
-int.to.str$ -- 12
-missing$ -- 7
-newline$ -- 33
-num.names$ -- 12
-pop$ -- 54
+int.to.str$ -- 18
+missing$ -- 10
+newline$ -- 48
+num.names$ -- 18
+pop$ -- 84
 preamble$ -- 1
-purify$ -- 20
+purify$ -- 29
 quote$ -- 0
-skip$ -- 117
+skip$ -- 174
 stack$ -- 0
-substring$ -- 234
-swap$ -- 19
-text.length$ -- 8
+substring$ -- 333
+swap$ -- 25
+text.length$ -- 11
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 46
-width$ -- 7
-write$ -- 64
-(There were 12 error messages)
+while$ -- 67
+width$ -- 10
+write$ -- 94
+(There were 16 error messages)
