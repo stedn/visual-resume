@@ -283,7 +283,7 @@ var w = $("#forcegraph").innerWidth(),
     h = 600;
 var r = 30*w/800;
     
-var clicked = ["me","teaching","computation"];
+var clicked = ["me","education","biology", "computing"];
 
 var force = d3.layout.force()
     .charge(function(d){ return clicked.indexOf(d.src)>-1 ? -3000*r/30 : 0;})
