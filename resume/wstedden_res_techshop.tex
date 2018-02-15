@@ -1,0 +1,142 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
+\usepackage{etoolbox}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{
+    pdfborderstyle={/S/U/W 1}, % underline links instead of boxes
+    linkbordercolor=red,       % color of internal links
+    citebordercolor=green,     % color of links to bibliography
+    filebordercolor=magenta,   % color of file links
+    urlbordercolor=blue        % color of external links
+}
+
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+
+\makeatletter
+\renewcommand\@biblabel[1]{-}
+\makeatother
+
+\name{Will (McFadden) Stedden} % Your name
+\address{San Francisco, CA \\ 773-263-0181 \\ will@makeloft.org }
+\address{hellowill.makeloft.org \\ linkedin.com/in/willstedden} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Electronics Teaching Experience}
+
+\begin{rSubsection}{Artifice Tech Education, NFP}{Aug 2015- Present}{Board Secretary and CTO}{Chicago, IL}
+	\item Founded after-school electronics and robotics program for youth on Chicago's south side
+	\item Launched initiative to expand to 3 new schools; aided recruiting efforts to quadruple volunteer staff
+	\item Designed and built \href{http://www.makeloft.org/2015/12/arfi-robotic-dog.html}{robot dog mascot} to aid in volunteer recruiting and student program promotion
+	
+\end{rSubsection}
+
+\begin{rSubsection}{Artifice Tech Education, NFP}{Dec 2013 - Jan 2017}{Lead Instructor and Curriculum Developer}{Chicago, IL}
+	\item Led and wrote content for 6 month pilot initiative in Chicago public school
+	\item Develop Arduino based curricula on \href{http://www.makeloft.org/2014/12/raser-curriculum.html}{home security systems} and \href{http://blog.artificechicago.org/2016/05/bluetooth-redbot-tutorial.html}{soccer robots}
+	\item Trained college interns to teach Wifi-enabled IoT home weather project for advanced students
+	
+\end{rSubsection}
+
+%------------------------------------------------
+
+
+\end{rSection}
+
+\begin{rSection}{Other Teaching and Mentorship Experience}
+
+\begin{rSubsection}{Homework Central}{Apr 2017 - Present}{Volunteer Tutor}{San Mateo, CA}
+	\item Tutored 8-11 year olds in San Mateo schools in reading and math
+	
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{Insight Data Science}{Jan 2017 - Present}{Mentor}{San Francisco, CA}
+	\item Mentored fellows in data science problem solving to prepare for project presentations and job interviews
+	
+\end{rSubsection}
+
+%------------------------------------------------
+
+\begin{rSubsection}{University of Chicago}{March 2012 - Sept 2016}{Teaching Assistant}{Chicago, IL}
+	\item Designed and taught original workshops in computational modeling and microscopy 
+	\item Assisted with teaching four undergraduate courses in biology, geophysics, and chemistry
+	
+\end{rSubsection}
+
+
+
+%------------------------------------------------
+
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{4ex}} l }
+Languages \& Platforms & Arduino, Python, R, Bluetooth, Basic Circuitry, App Engine, GitHub, AWS \\
+CAD \& Documentation  & Tinkercad, AutoCAD, Blender, Inkscape, WordPress, Blogger, \LaTeX \end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Awards and Honors
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Awards and Grants}
+Turning Waste Plastics into 3D Printing Filament, {\em University of Chicago Art+Science Grant} 2015 \\
+Using Motion Capture Technology in Dance, {\em University of Chicago Art+Science Grant} 2011 
+	
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf University of Chicago} \hfill {\em May 2017} \\ 
+Ph.D. in Biophysical Science\hfill {GPA: 3.66/4} 
+
+{\bf University of Illinois at Urbana-Champaign} \hfill {\em Dec 2009} \\ 
+B.S. in Engineering Physics with minors in Mathematics and Computer Science \hfill {GPA: 3.67/4} 
+
+\end{rSection}
+
+
+\end{document}
