@@ -1,0 +1,138 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
+\usepackage{etoolbox}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{
+    pdfborderstyle={/S/U/W 1}, % underline links instead of boxes
+    linkbordercolor=red,       % color of internal links
+    citebordercolor=green,     % color of links to bibliography
+    filebordercolor=magenta,   % color of file links
+    urlbordercolor=blue        % color of external links
+}
+
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+
+\makeatletter
+\renewcommand\@biblabel[1]{-}
+\makeatother
+
+\name{Will Stedden} % Your name
+\address{San Francisco, CA \\ 773-263-0181 \\ will@makeloft.org }
+\address{hellowill.makeloft.org \\ linkedin.com/in/willstedden} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{4ex}} l }
+Languages \& Tools & R, python, SQL, MATLAB, JS, sklearn, pandas, tidyverse, git, AWS, Tableau, D3 \\
+\end{tabular}
+
+
+\begin{rSection}{Data Science \& Research Experience}
+
+\begin{rSubsection}{Color}{Dec 2016 - Present}{Data Scientist}{color.com}
+\item Analyzed clinical genomic data to improve client experience and advance uderstanding of genetic medicine
+\item Implemented and maintained core ETL pipeline to deliver mission critical data to 100+ person company
+\item Defined company-wide key metrics and devised strategies to optimize lab operations and client services
+
+\end{rSubsection}
+
+\begin{rSubsection}{Insight Data Science}{Aug 2016 - Dec 2016}{Health Data Fellow}{insighthealthdata.com}
+\item Built online NLP classification of patient symptoms using unstructured medical forum data in python
+
+\end{rSubsection}
+
+\begin{rSubsection}{University of Chicago, Munro Research Group}{Aug 2011 - Feb 2017}{Ph.D. Research Assistant}{munrolab.uchicago.edu}
+	\item Devised statistical methods for novel single-molecule measurement techniques and published results
+	\item Collaborated with experimentalists to build computational models of biological systems in MATLAB
+	
+\end{rSubsection}
+
+
+\begin{rSubsection}{Tempus}{June 2016 - Aug 2017}{Graduate Intern}{tempus.com}
+\item Built data inspection tools to monitor clinical trial labeling accuracy, efficiency, and scope
+\end{rSubsection}
+
+
+\begin{rSubsection}{University of Chicago, Research Computing Center}{Apr 2015 - Aug 2017}{Graduate Research Assistant}{rcc.uchicago.edu}
+\item Analyzed supercomputer power usage to optimize datacenter energy saving strategies
+\end{rSubsection}
+
+\end{rSection}
+
+
+%------------------------------------------------
+
+\begin{rSection}{Mentorship and Advising}
+
+\begin{rSubsection}{Artifice Tech Education, NFP}{Dec 2013- Present}{Board Secretary and CTO}{Chicago, IL}
+	\item Founded after-school electronics and robotics program for youth on Chicago's south side
+	\item Launched initiative to expand to 3 new schools; aided recruiting efforts to quadruple volunteer staff
+	\item Develop Arduino based curricula on \href{http://www.makeloft.org/2014/12/raser-curriculum.html}{home security systems} and \href{http://blog.artificechicago.org/2016/05/bluetooth-redbot-tutorial.html}{soccer robots}
+
+\end{rSubsection}
+
+
+\begin{rSubsection}{Insight Data Science}{Jan 2017 - Present}{Technical Advisor}{San Francisco, CA}
+	\item Mentored fellows in data science problem solving to prepare for project presentations and job interviews
+	
+\end{rSubsection}
+
+
+%------------------------------------------------
+
+
+\end{rSection}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf University of Chicago} \hfill {\em May 2017} \\ 
+Ph.D. in Biophysical Science\hfill {GPA: 3.66/4} 
+
+{\bf University of Illinois at Urbana-Champaign} \hfill {\em Dec 2009} \\ 
+B.S. in Engineering Physics with minors in Mathematics and Computer Science \hfill {GPA: 3.67/4} 
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+
+
+\end{document}
