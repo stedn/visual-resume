@@ -119,7 +119,7 @@
    {
       "category":"UChicago",
       "imports":[
-         "makeloft.org"
+         "bonkerfield.org"
       ],
       "ref":"https://www.linkedin.com/pub/claire-stevenson/15/490/35",
       "name":"Claire Stevenson"
@@ -188,6 +188,22 @@
       ],
       "ref":"https://www.linkedin.com/in/carmenlai/",
       "name":"Carmen Lai"
+   },
+   {
+      "category":"Color",
+      "imports":[
+         "color.com"
+      ],
+      "ref":"https://twitter.com/gilad",
+      "name":"Gilad Mishne"
+   },
+   {
+      "category":"Color",
+      "imports":[
+         "color.com"
+      ],
+      "ref":"https://www.linkedin.com/in/julian-homburger-39012099/",
+      "name":"Julian Homburger"
    },
    {
       "category":"Color",
@@ -325,10 +341,11 @@
          "web",
          "electronics",
          "writing",
-         "design"
+         "design",
+         "music"
       ],
-      "ref":"http://www.makeloft.org/",
-      "name":"makeloft.org"
+      "ref":"http://www.bonkerfield.org/",
+      "name":"bonkerfield.org"
    },
    {
       "category":"academic",
@@ -394,7 +411,8 @@
          "machine learning",
          "statistics",
          "presentation",
-         "interviewing"
+         "interviewing",
+         "genomics"
       ],
       "ref":"https://www.color.com",
       "name":"color.com"
@@ -470,6 +488,14 @@
       ],
       "ref":"https://en.wikipedia.org/wiki/Optical_microscope",
       "name":"microscopy"
+   },
+   {
+      "category":"sci",
+      "imports":[
+
+      ],
+      "ref":"https://en.wikipedia.org/wiki/Genomics",
+      "name":"genomics"
    },
    {
       "category":"sci",

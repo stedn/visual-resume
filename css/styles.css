@@ -94,7 +94,7 @@ a {
 #sidebar, #sidebar a {
     height:100%;
     color:#ffffff;
-    background-color:transparent;
+    background-color:#000;
 	text-shadow:1px 0 1px #888888;
 }
 #sidebar img.logo {
